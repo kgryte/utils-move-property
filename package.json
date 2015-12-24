@@ -1,0 +1,53 @@
+{
+  "name": "utils-move-property",
+  "version": "0.0.0",
+  "description": "Move a property from one object to another object.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/utils-move-property.git"
+  },
+  "keywords": [
+		"move",
+		"copy",
+		"property",
+		"prop",
+		"object",
+		"transfer",
+		"util",
+		"utils",
+		"utility",
+		"utilities",
+		"cp",
+		"mv",
+		"obj"
+	],
+  "bugs": {
+    "url": "https://github.com/kgryte/utils-move-property/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.4.1",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x"
+  },
+  "license": "MIT"
+}
