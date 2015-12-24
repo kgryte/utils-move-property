@@ -139,4 +139,15 @@ describe( 'utils-move-property', function tests() {
 		}
 	});
 
+	it( 'should move a property, but not deep copy', function test() {
+		var arr = [ 1, 2, 3 ];
+		var obj1 = { 'a': arr };
+		var obj2 = {};
+		var bool = mv( obj1, 'a', obj2 );
+		assert.isTrue( bool );
+		assert.deepEqual( obj2, {'a':arr} );
+		assert.deepEqual( obj1, {} );
+		assert.strictEqual( obj2.a, arr );
+	});
+
 });
