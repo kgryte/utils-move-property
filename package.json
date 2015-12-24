@@ -1,6 +1,6 @@
 {
   "name": "utils-move-property",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Move a property from one object to another object.",
   "author": {
     "name": "Athan Reines",
@@ -23,20 +23,20 @@
     "url": "git://github.com/kgryte/utils-move-property.git"
   },
   "keywords": [
-		"move",
-		"copy",
-		"property",
-		"prop",
-		"object",
-		"transfer",
-		"util",
-		"utils",
-		"utility",
-		"utilities",
-		"cp",
-		"mv",
-		"obj"
-	],
+    "move",
+    "copy",
+    "property",
+    "prop",
+    "object",
+    "transfer",
+    "util",
+    "utils",
+    "utility",
+    "utilities",
+    "cp",
+    "mv",
+    "obj"
+  ],
   "bugs": {
     "url": "https://github.com/kgryte/utils-move-property/issues"
   },
