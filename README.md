@@ -1,6 +1,6 @@
 Move Property
 ===
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
 
 > Move a property from one object to another object.
 
@@ -38,7 +38,6 @@ var bool = mv( obj1, 'c', obj2 );
 ```
 
 
-
 ## Notes
 
 *	The property is __deleted__ from the *source* `object`.
@@ -56,7 +55,6 @@ var bool = mv( obj1, 'c', obj2 );
 	```
 
 *	If a *source* property is __not__ `configurable`, the `function` throws an `Error`, as the property __cannot__ be deleted from the *source* `object`.
-
 
 
 ## Examples
@@ -96,11 +94,12 @@ $ node ./examples/index.js
 ```
 
 
+---
 ## Tests
 
 ### Unit
 
-Unit tests use the [Mocha][mocha] test framework with [Chai][chai] assertions. To run the tests, execute the following command in the top-level application directory:
+This repository uses [tape][tape] for unit tests. To run the tests, execute the following command in the top-level application directory:
 
 ``` bash
 $ make test
@@ -124,6 +123,23 @@ $ make view-cov
 ```
 
 
+### Browser Support
+
+This repository uses [Testling][testling] for browser testing. To run the tests in a (headless) local web browser, execute the following command in the top-level application directory:
+
+``` bash
+$ make test-browsers
+```
+
+To view the tests in a local web browser,
+
+``` bash
+$ make view-browser-tests
+```
+
+<!-- [![browser support][browsers-image]][browsers-url] -->
+
+
 ---
 ## License
 
@@ -138,11 +154,11 @@ Copyright &copy; 2015. Athan Reines.
 [npm-image]: http://img.shields.io/npm/v/utils-move-property.svg
 [npm-url]: https://npmjs.org/package/utils-move-property
 
-[travis-image]: http://img.shields.io/travis/kgryte/utils-move-property/master.svg
-[travis-url]: https://travis-ci.org/kgryte/utils-move-property
+[build-image]: http://img.shields.io/travis/kgryte/utils-move-property/master.svg
+[build-url]: https://travis-ci.org/kgryte/utils-move-property
 
-[codecov-image]: https://img.shields.io/codecov/c/github/kgryte/utils-move-property/master.svg
-[codecov-url]: https://codecov.io/github/kgryte/utils-move-property?branch=master
+[coverage-image]: https://img.shields.io/codecov/c/github/kgryte/utils-move-property/master.svg
+[coverage-url]: https://codecov.io/github/kgryte/utils-move-property?branch=master
 
 [dependencies-image]: http://img.shields.io/david/kgryte/utils-move-property.svg
 [dependencies-url]: https://david-dm.org/kgryte/utils-move-property
@@ -153,6 +169,6 @@ Copyright &copy; 2015. Athan Reines.
 [github-issues-image]: http://img.shields.io/github/issues/kgryte/utils-move-property.svg
 [github-issues-url]: https://github.com/kgryte/utils-move-property/issues
 
-[mocha]: http://mochajs.org/
-[chai]: http://chaijs.com
+[tape]: https://github.com/substack/tape
 [istanbul]: https://github.com/gotwarlost/istanbul
+[testling]: https://ci.testling.com
