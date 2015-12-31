@@ -1,6 +1,6 @@
 {
   "name": "utils-move-property",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Move a property from one object to another object.",
   "author": {
     "name": "Athan Reines",
